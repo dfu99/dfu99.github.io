@@ -35,10 +35,6 @@ jobs:
         with:
           source: ./build
           destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: ./build
 
   # Deployment job
   deploy:
