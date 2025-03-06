@@ -2,7 +2,6 @@
 layout: default
 title: Home
 permalink: /
-exclude_from_nav: true
 ---
 
 [GitHub](https://github.com/dfu99) | [Google Scholar](https://scholar.google.com/citations?user=ZKgYdi4AAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/danfu7/)
