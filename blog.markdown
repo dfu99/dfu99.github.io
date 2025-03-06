@@ -1,13 +1,7 @@
 ---
-layout: default
+layout: home
 title: Blog
+permalink: /blog/
 ---
 
-<h1>My Blog</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%B %d, %Y" }})
-    </li>
-  {% endfor %}
-</ul>
+Hi, are you lost?
