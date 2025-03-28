@@ -6,6 +6,27 @@ permalink: /research/
 
 # Projects
 
+## **FIND-SNP**
+![FIND-SNP](/images/findsnp.png){:width="600px" class="center}
+
+FIND-SNP is a diagnostic framework that leverages deep learning and multi-channel fluorescent assays to identify and locate cancer-related polymorphisms, offering a cost-effective alternative to traditional sequencing methods.
+
+This project is active and ongoing.
+
+## **Random dendritic ANN generator** ##
+*Graphical abstract coming soon*
+
+We are creating digital models of brain-like neural structures and transforming them into deep neural networks. By simulating biological growth processes, we can manipulate these structures and study how connectivity shapes learning and performance. This approach helps us uncover principles of neural organization and design more efficient AI models.
+
+This project is active and ongoing.
+
+## **Hallu-RL** ##
+*Graphical abstract coming soon*
+
+We are developing an AI system where LLMs teach each other in an automated teacher-student-examiner setup. By leveraging controlled hallucinations and reinforcement learning, our approach allows AI agents to refine their understanding of domain-specific knowledge—like financial reports—beyond their pre-training. This presents a new way to view AI-generated speculation, not as an error, but as a tool for deeper learning.
+
+This project is active and ongoing.
+
 ## **DNAxiS**
 
 ![DNAxiS](/images/dnaxis.jpg){:width="600px" class="center"}
