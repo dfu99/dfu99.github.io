@@ -7,7 +7,7 @@ permalink: /research/
 # Projects
 
 ## **FIND-SNP**
-![FIND-SNP](/images/findsnp.png){:width="600px" class="center}
+*Graphical abstract coming soon*
 
 FIND-SNP is a diagnostic framework that leverages deep learning and multi-channel fluorescent assays to identify and locate cancer-related polymorphisms, offering a cost-effective alternative to traditional sequencing methods.
 
