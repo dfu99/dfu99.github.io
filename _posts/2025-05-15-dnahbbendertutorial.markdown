@@ -5,7 +5,7 @@ date:   2025-05-15
 categories: jekyll update
 ---
 
-A tutorial was added for using the DNA helix bundle bender script (https://github.com/dfu99/dnahbbender).
+A tutorial was added for using the DNA helix bundle bender script [https://github.com/dfu99/dnahbbender](https://github.com/dfu99/dnahbbender).
 
 While this only covers a very narrow slice of the design space, it's useful for what it does cover, which is any continuous, bent helix bundle 2D structure.
 

@@ -20,7 +20,7 @@ This lets me scroll through each data point. I can also select specific complexe
 
 This is a first release. Chances are it will continue to change based on whatever my next frustration with handling the data is!
 
-Check it out: https://github.com/dfu99/dna-complex-dashboard
+Check it out: [https://github.com/dfu99/dna-complex-dashboard](https://github.com/dfu99/dna-complex-dashboard)
 
 ---
 
