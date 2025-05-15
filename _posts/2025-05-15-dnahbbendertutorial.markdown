@@ -31,7 +31,7 @@ For this structure, with a bit of trig, we determined that, along our bend, our 
 
 Using the beam model equation above, for the positions of our three planes, the insertion/deletion gradient is [-14, 0, +14]. Thus, with 32 bp as our reference, the subsequently outer layer bends are 46 bp and 60 bp long.
 
-We use the middle plane length as the nominal length for creating the caDNAno template. The total length of our triangle (as a cycle) is \\(46 \cdot 3 + 84 \cdot 3 = 390\\).
+We use the middle plane length as the nominal length for creating the caDNAno template. The total length of our triangle (as a cycle) is $$ 46 \cdot 3 + 84 \cdot 3 = 390 $$.
 
 We then go on and draw that in caDNAno.
 
