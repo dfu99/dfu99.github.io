@@ -11,7 +11,7 @@ Strategies to circumvent this bottleneck are few but quite interesting. The them
 
 In any case, I'm quite invested in seeing how such a philosophy develops.
 
-I'm sharing a useful widget here that's come in handy for analyzing some smaller systems. I generated some synthetic training data using [NUPACK](https://www.nupack.org/) to feed into a model. I was plotting inputs side-by-side for a bit but even then I couldn't get a *feel* for how systems were changing.
+I'm sharing a useful widget here that's come in handy for analyzing some smaller systems. I generated some synthetic training data using [NUPACK](https://www.nupack.org/) to feed into a model. I was plotting inputs side-by-side for a bit, but I couldn't get a *feel* for how systems were changing.
 
 This lets me scroll through each data point. I can also select specific complexes and as I scroll, only those complexes (or sums of them!) will be displayed.
 
