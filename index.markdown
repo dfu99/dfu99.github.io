@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-[GitHub](https://github.com/dfu99) | [Google Scholar](https://scholar.google.com/citations?user=ZKgYdi4AAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/danfu7/)
+[GitHub](https://github.com/dfu99) | [Google Scholar](https://scholar.google.com/citations?user=ZKgYdi4AAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/danfu7/) | [BlueSky](https://bsky.app/profile/dfu.bsky.social)
 
 ### Academic interests
 

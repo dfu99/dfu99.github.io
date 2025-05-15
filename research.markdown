@@ -53,9 +53,7 @@ Our paper on this work was published in the Journal of Royal Society Interface: 
 
 ![Cancer Cell Membrane Targeting via HCR](/images/cc_membrane_circuits.gif){:width="600px" class="center"}
 
-The Reif lab continues to explore applications of localized hairpin-based HCR circuits <sup>[[1]](https://doi.org/10.1021/acsnano.7b06699)</sup>. We have previously published work on using our architecture for cancer cell detection in JACS: [DOI: 10.1021/jacs.9b05598](https://doi.org/10.1021/jacs.9b05598).
-
-A new manuscript submission is in progress. Please await future updates.
+We explored applications of localized hairpin-based HCR circuits <sup>[[1]](https://doi.org/10.1021/acsnano.7b06699)</sup>. We published work on using our architecture for cancer cell detection in JACS: [DOI: 10.1021/jacs.9b05598](https://doi.org/10.1021/jacs.9b05598).
 
 # Other
 
