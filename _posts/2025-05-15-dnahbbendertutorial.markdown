@@ -19,11 +19,11 @@ First, of all, we need to know our exact dimensions before creating a template.
 
 In this design, we'll be folding a 6 helix bundle along its 3-plane axis. We can mark the planes as such:
 
-<img src="/images/walkthrough/6hbplanes.png" alt="6 helix bundle planes" width="50%" />
+<img src="/images/2025-05-15/6hbplanes.png" alt="6 helix bundle planes" width="50%" />
 
 We then have to decide how much we want our corners to curve.
 
-![](/EXAMPLES/walkthrough/curvedtrianglediagram.png)
+![](/images/2025-05-15/curvedtrianglediagram.png)
 
 In this case, we are only interested in the inner dimensions of the triangle, but the other layers have been drawn with dotted lines. The longer dashed line at the triangle's corners are how much we will be shortening an edge to insert the curved corner. We started with a 126 bp edge.
 
@@ -35,15 +35,15 @@ We use the middle plane length as the nominal length for creating the caDNAno te
 
 We then go on and draw that in caDNAno.
 
-![](/images/walkthrough/step1.png)
+![](/images/2025-05-15/step1.png)
 
 Add our breakpoints...
 
-![](/images/walkthrough/step2.png)
+![](/images/2025-05-15/step2.png)
 
 Note that the endpoints of the structure are connected.
 
-<img src="/images/walkthrough/edge1.png" alt="Edge 1" height="33%" /> - ... - <img src="/images/walkthrough/edge2.png" alt="Edge 2" height="33%" />
+<img src="/images/2025-05-15/edge1.png" alt="Edge 1" height="33%" /> - ... - <img src="/images/2025-05-15/edge2.png" alt="Edge 2" height="33%" />
 
 We now run the script, three times, once to make each corner.
 
@@ -51,20 +51,20 @@ We now run the script, three times, once to make each corner.
 
 Produces...
 
-![](/images/walkthrough/temp_01.png)
+![](/images/2025-05-15/temp_01.png)
 
 For the second bend...
 
 `python autobender.py -o temp_02.json -lt hc -a 120 -l 46 -s 221 -x 0 temp_01.json `
 
-![](/images/walkthrough/temp_02.png)
+![](/images/2025-05-15/temp_02.png)
 
 And for the third bend...
 
 `python autobender.py -o temp_03.json -lt hc -a 120 -l 46 -s 351 -x 0 temp_02.json `
 
-![](/images/walkthrough/temp_03.png)
+![](/images/2025-05-15/temp_03.png)
 
 This final caDNAno design can then be converted by [tacoxDNA](http://tacoxdna.sissa.it/) and simulated in [oxDNA](https://dna.physics.ox.ac.uk/index.php/Main_Page) or viewed in [oxView](https://sulcgroup.github.io/oxdna-viewer/).
 
-![](/images/walkthrough/canvas.png)
+![](/images/2025-05-15/canvas.png)
