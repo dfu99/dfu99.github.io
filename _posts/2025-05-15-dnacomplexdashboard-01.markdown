@@ -15,7 +15,7 @@ I'm sharing a useful widget here that's come in handy for analyzing some smaller
 
 This lets me scroll through each data point.
 
-![Example Screen](/images/2025_05_15/screen1.png "What the interface looks like right now")
+![Example Screen](/images/2025-05-15/screen1.png "What the interface looks like right now")
 
 
 [^1]: Buterez, David. "Scaling up DNA digital data storage by efficiently predicting DNA hybridisation using deep learning." Scientific reports 11.1 (2021): 20517.
