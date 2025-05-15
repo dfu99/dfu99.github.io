@@ -7,7 +7,7 @@ categories: jekyll update
 
 I've been working on a DNA foundation model, not for genomics, which seems to be the usual lately, but for primarily DNA computing. There's a subtle thread throughout the years of this idea that DNA computing can probably do much more than what's been demomnstrated. It struggles to reach its full potential in designing complex, dynamical systems because we're a bit strapped behind having to design obvious reactions. We can't make much sense of the less than obvious systems.
 
-Strategies to circumvent this bottleneck are few but quite interesting. The theme of being able to distinguish the full spectrum orthogonal and non-specific hybridization reactions is likely a pivotal idea [^1],[^2], [^3]. Use and understand mismatches, rather than avoid them completely.
+Strategies to circumvent this bottleneck are few but quite interesting. The theme of being able to distinguish the full spectrum orthogonal and non-specific hybridization reactions is likely a pivotal idea [^1],[^2],[^3]. Use and understand mismatches, rather than avoid them completely.
 
 In any case, I'm quite invested in seeing how such a philosophy develops.
 
