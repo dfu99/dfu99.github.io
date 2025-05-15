@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DNA Complexes Dashboard"
-date:   2025-05-15 10:57:00 -0500
+date:   2025-05-15
 categories: jekyll update
 ---
 

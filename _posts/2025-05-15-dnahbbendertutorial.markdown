@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DNA Helix Bender Tutorial"
-date:   2025-05-15 17:27:00 -0500
+date:   2025-05-15
 categories: jekyll update
 ---
 
