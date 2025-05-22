@@ -29,7 +29,7 @@ This project is active and ongoing.
 
 ## **DNAxiS**
 
-![DNAxiS](/images/dnaxis.jpg){:width="600px" class="center"}
+![DNAxiS](/images/research/dnaxis.jpg){:width="600px" class="center"}
 
 DNAxiS is a computational tool for generating design sequences for rotational DNA origami nanostructures.
 
@@ -41,7 +41,7 @@ Our paper on this work was published in Science Advances: [DOI: 10.1126/sciadv.a
 
 ## **Y-STAM**
 
-![YSTAM](/images/ystam.png){:width="600px" class="center"}
+![YSTAM](/images/research/ystam.png){:width="600px" class="center"}
 
 The Branching Signal-passing Tile Assembly Model (Y-STAM) is a model of branching self-assembly processes evaluated using DNA tile assembly as a substrate. It is currently presented as a simulator implemented in MATLAB.
 
@@ -51,7 +51,7 @@ Our paper on this work was published in the Journal of Royal Society Interface: 
 
 ## **Applications of Localized Hybridization Chain Reaction Circuits**
 
-![Cancer Cell Membrane Targeting via HCR](/images/cc_membrane_circuits.gif){:width="600px" class="center"}
+![Cancer Cell Membrane Targeting via HCR](/images/research/cc_membrane_circuits.gif){:width="600px" class="center"}
 
 We explored applications of localized hairpin-based HCR circuits <sup>[[1]](https://doi.org/10.1021/acsnano.7b06699)</sup>. We published work on using our architecture for cancer cell detection in JACS: [DOI: 10.1021/jacs.9b05598](https://doi.org/10.1021/jacs.9b05598).
 

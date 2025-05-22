@@ -15,6 +15,8 @@ The systems we see in nature are messy, noisy, and overwhelmingly complex in bot
 
 Feel free to browse or get in touch about any of my ongoing or past [research](/research).
 
+**Contact:** my_first_name [dot] my_last_name [at] emory [dot] edu
+
 ### Selected publications
 
 * **Fu D**, Reif J. A Biomimetic Branching Signal-Passing Tile-Assembly Model with Dynamic Growth and Disassembly. Journal of Royal Society Interface. 2024 Aug 21;21(217):20230755.
