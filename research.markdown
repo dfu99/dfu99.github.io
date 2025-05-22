@@ -7,7 +7,9 @@ permalink: /research/
 # Projects
 
 ## **FIND-SNP**
-![FIND-SNP](/images/research/findsnp.png){.center}
+<p align="center">
+    <img src="/images/research/findsnp.png" alt="FIND-SNP" width="300px" />
+</p>
 
 FIND-SNP is a diagnostic framework that leverages deep learning and multi-channel fluorescent assays to identify and locate cancer-related polymorphisms, offering a cost-effective alternative to traditional sequencing methods.
 
@@ -31,7 +33,9 @@ This project is active and ongoing.
 
 ## **DNAxiS**
 
-![DNAxiS](/images/research/dnaxis.jpg){:width="300px" .center}
+<p align="center">
+    <img src="/images/research/dnaxis.jpg" alt="DNAxiS" width="300px" />
+</p>
 
 DNAxiS is a computational tool for generating design sequences for rotational DNA origami nanostructures.
 
@@ -43,7 +47,9 @@ Our paper on this work was published in Science Advances: [DOI: 10.1126/sciadv.a
 
 ## **Y-STAM**
 
-![YSTAM](/images/research/ystam.png){:width="300px" .center}
+<p align="center">
+    <img src="/images/research/ystam.png" alt="YSTAM" width="300px" />
+</p>
 
 The Branching Signal-passing Tile Assembly Model (Y-STAM) is a model of branching self-assembly processes evaluated using DNA tile assembly as a substrate. It is currently presented as a simulator implemented in MATLAB.
 
@@ -53,7 +59,9 @@ Our paper on this work was published in the Journal of Royal Society Interface: 
 
 ## **Applications of Localized Hybridization Chain Reaction Circuits**
 
-![Cancer Cell Membrane Targeting via HCR](/images/research/cc_membrane_circuits.gif){:width="300px" .center}
+<p align="center">
+    <img src="/images/research/cc_membrane_circuits.gif" alt="Cancer Cell Membrane Targeting via HCR" width="300px" />
+</p>
 
 We explored applications of localized hairpin-based HCR circuits <sup>[[1]](https://doi.org/10.1021/acsnano.7b06699)</sup>. We published work on using our architecture for cancer cell detection in JACS: [DOI: 10.1021/jacs.9b05598](https://doi.org/10.1021/jacs.9b05598).
 
