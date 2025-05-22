@@ -13,14 +13,7 @@ Many artificial systems tend to be neat, deterministic, and predictable.
 However, I would argue that such "perfect" systems scale incredibly poorly.
 The systems we see in nature are messy, noisy, and overwhelmingly complex in both construction and function, yet are often based on simple rules, which I study under the umbrella of self-assembly.
 
-In currently ongoing work in the NeuroAI scope, I apply this philosophy with most of my attention on two areas.
-The work is not yet published, but feel free to reach out if you are interested in discussing.
-* Hallucinations as a necessary component of building versatile reasoning models.
-* The effect of dendritic structure on training efficiency and baseline outcomes, bridging neuroethology and neural network initialization.
-
-In past work, I evaluated stochastic methods in DNA-based self-assembly related to 
-constructing 3D DNA nanostructures with complex mechanical stress properties as well as 
-biomimetic self-assembly processes using DNA tile-based self-assembly as a substrate.
+Feel free to browse or get in touch about any of my ongoing or past [research](/research).
 
 ### Selected publications
 
