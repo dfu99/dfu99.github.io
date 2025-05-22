@@ -14,7 +14,9 @@ FIND-SNP is a diagnostic framework that leverages deep learning and multi-channe
 This project is active and ongoing.
 
 ## **Random dendritic ANN generator** ##
-![SynthBioNN](/images/research/synthbionn.png){.center}
+<p align="center">
+    <img src="/images/research/synthbionn.png" alt="SynthBioNN" width="300px" />
+</p>
 
 We are creating digital models of brain-like neural structures and transforming them into deep neural networks. By simulating biological growth processes, we can manipulate these structures and study how connectivity shapes learning and performance. This approach helps us uncover principles of neural organization and design more efficient AI models.
 
@@ -29,7 +31,7 @@ This project is active and ongoing.
 
 ## **DNAxiS**
 
-![DNAxiS](/images/research/dnaxis.jpg){:width="600px" .center}
+![DNAxiS](/images/research/dnaxis.jpg){:width="300px" .center}
 
 DNAxiS is a computational tool for generating design sequences for rotational DNA origami nanostructures.
 
@@ -41,7 +43,7 @@ Our paper on this work was published in Science Advances: [DOI: 10.1126/sciadv.a
 
 ## **Y-STAM**
 
-![YSTAM](/images/research/ystam.png){:width="600px" .center}
+![YSTAM](/images/research/ystam.png){:width="300px" .center}
 
 The Branching Signal-passing Tile Assembly Model (Y-STAM) is a model of branching self-assembly processes evaluated using DNA tile assembly as a substrate. It is currently presented as a simulator implemented in MATLAB.
 
@@ -51,7 +53,7 @@ Our paper on this work was published in the Journal of Royal Society Interface: 
 
 ## **Applications of Localized Hybridization Chain Reaction Circuits**
 
-![Cancer Cell Membrane Targeting via HCR](/images/research/cc_membrane_circuits.gif){:width="600px" .center}
+![Cancer Cell Membrane Targeting via HCR](/images/research/cc_membrane_circuits.gif){:width="300px" .center}
 
 We explored applications of localized hairpin-based HCR circuits <sup>[[1]](https://doi.org/10.1021/acsnano.7b06699)</sup>. We published work on using our architecture for cancer cell detection in JACS: [DOI: 10.1021/jacs.9b05598](https://doi.org/10.1021/jacs.9b05598).
 
