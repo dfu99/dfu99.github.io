@@ -8,7 +8,7 @@ permalink: /research/
 
 ## **FIND-SNP**
 <p align="center">
-    <img src="/images/research/findsnp.png" alt="FIND-SNP" width="300px" />
+    <img src="/images/research/findsnp.png" alt="FIND-SNP" width="450px" />
 </p>
 
 FIND-SNP is a diagnostic framework that leverages deep learning and multi-channel fluorescent assays to identify and locate cancer-related polymorphisms, offering a cost-effective alternative to traditional sequencing methods.
@@ -48,7 +48,7 @@ Our paper on this work was published in Science Advances: [DOI: 10.1126/sciadv.a
 ## **Y-STAM**
 
 <p align="center">
-    <img src="/images/research/ystam.png" alt="YSTAM" width="300px" />
+    <img src="/images/research/ystam.png" alt="YSTAM" width="450px" />
 </p>
 
 The Branching Signal-passing Tile Assembly Model (Y-STAM) is a model of branching self-assembly processes evaluated using DNA tile assembly as a substrate. It is currently presented as a simulator implemented in MATLAB.
