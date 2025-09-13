@@ -4,27 +4,37 @@ title: Home
 permalink: /
 ---
 
-[GitHub](https://github.com/dfu99) | [Google Scholar](https://scholar.google.com/citations?user=ZKgYdi4AAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/danfu7/) | [BlueSky](https://bsky.app/profile/dfu.bsky.social)
+<div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2.5rem;">
+  <img src="/images/photos/profile.png" alt="Profile photo" style="border-radius: 50%; width: 135px; height: 135px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
+  <div>
+    <h1 style="margin-bottom: .3em;">Dan Fu, PhD</h1>
+    <div style="margin-bottom: 0.7em; font-size: 1.08em;">
+      Research Scientist · Machine Learning & Biophysics<br/>
+      <a href="https://github.com/dfu99">GitHub</a> &nbsp;|&nbsp;
+      <a href="https://scholar.google.com/citations?user=ZKgYdi4AAAAJ&amp;hl=en">Google Scholar</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/danfu7/">LinkedIn</a> &nbsp;|&nbsp;
+      <a href="https://bsky.app/profile/dfu.bsky.social">BlueSky</a>
+    </div>
+    <div style="font-size: .98em; color: #505050;">Contact: <span style="letter-spacing: .03em;">daniel [dot] my_last_name [at] emory [dot] edu</span></div>
+  </div>
+</div>
 
-### Academic interests
+## Academic Interests
 
-I am generally interested in bio-inspired ideas related to how noise and errors contribute to function, as opposed to the intuitive sense that they are detrimental to function.
-Many artificial systems tend to be neat, deterministic, and predictable.
-However, I would argue that such "perfect" systems scale incredibly poorly.
-The systems we see in nature are messy, noisy, and overwhelmingly complex in both construction and function, yet are often based on simple rules, which I study under the umbrella of self-assembly.
+Bio-inspired systems; functional noise and errors; self-assembly in complex systems. Bridging biophysics and AI with minimal deterministic assumptions.
 
-Feel free to browse or get in touch about any of my ongoing or past [research](/research).
+Feel free to browse or get in touch about ongoing or previous [research](/research).
 
-**Contact:** my_first_name [dot] my_last_name [at] emory [dot] edu
+## Selected Publications
 
-### Selected publications
+<ul style="line-height: 1.8;">
+  <li><b>Fu D</b>, Reif J. <i>A Biomimetic Branching Signal-Passing Tile-Assembly Model with Dynamic Growth and Disassembly.</i> <b>Journal of Royal Society Interface</b> (2024). <a href="https://doi.org/10.1098/rsif.2023.0755">[publisher]</a></li>
+  <li><b>Fu D</b>, Pradeep Narayanan R, Prasad A, Zhang F, Williams D, Schreck JS, Yan H, Reif J. <i>Automated design of 3D DNA origami with non-rasterized 2D curvature.</i> <b>Science Advances</b> (2022). <a href="https://doi.org/10.1126/sciadv.ade4455">[publisher]</a></li>
+</ul>
 
-* **Fu D**, Reif J. A Biomimetic Branching Signal-Passing Tile-Assembly Model with Dynamic Growth and Disassembly. Journal of Royal Society Interface. 2024 Aug 21;21(217):20230755.
-* **Fu D**, Pradeep Narayanan R, Prasad A, Zhang F, Williams D, Schreck JS, Yan H, Reif J. Automated design of 3D DNA origami with non-rasterized 2D curvature. Science Advances. 2022 Dec 23;8(51):eade4455.
-* Song T, Shah S, Bui H, Garg S, Eshra A, **Fu D**, Yang M, Mokhtar R, Reif J. Programming DNA-based biomolecular reaction networks on cancer cell membranes. Journal of the American Chemical Society. 2019 Oct 10;141(42):16539-43.
-* Song X, **Fu D**, Shah S, Reif J. UV-Micropatterned Miniaturization: Rapid In Situ Photopatterning and Miniaturization of Microscale Features on Shrinkable Thermoplastics. Advanced Materials Technologies. 2020 Jun;5(6):2000146.
+## Reviews
 
-### Reviews
-
-* Nagipogu RT, **Fu D**, Reif J. A survey on molecular-scale learning systems with relevance to DNA computing. Nanoscale. 2023;15(17):7676-94.
-* **Fu D**, Reif J. 3D DNA nanostructures: The nanoscale architect. Applied Sciences. 2021 Mar 16;11(6):2624.
+<ul style="line-height: 1.8;">
+  <li>Nagipogu RT, <b>Fu D</b>, Reif J. <i>A survey on molecular-scale learning systems with relevance to DNA computing.</i> <b>Nanoscale</b> (2023). <a href="https://doi.org/10.1039/D2NR06202J">[publisher]</a></li>
+  <li><b>Fu D</b>, Reif J. <i>3D DNA nanostructures: The nanoscale architect.</i> <b>Applied Sciences</b> (2021). <a href="https://doi.org/10.3390/app11062624">[publisher]</a></li>
+</ul>
