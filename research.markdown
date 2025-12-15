@@ -4,32 +4,12 @@ title: Research
 permalink: /research/
 ---
 
-# Projects
 
-## **FIND-SNP**
-<p align="center">
-    <img src="/images/research/findsnp.png" alt="FIND-SNP" width="450px" />
-</p>
+# Current Projects
 
-FIND-SNP is a diagnostic framework that leverages deep learning and multi-channel fluorescent assays to identify and locate cancer-related polymorphisms, offering a cost-effective alternative to traditional sequencing methods.
+<i>Stay tuned for preprints!</i>
 
-This project is active and ongoing.
-
-## **Random dendritic ANN generator** ##
-<p align="center">
-    <img src="/images/research/synthbionn.png" alt="SynthBioNN" width="300px" />
-</p>
-
-We are creating digital models of brain-like neural structures and transforming them into deep neural networks. By simulating biological growth processes, we can manipulate these structures and study how connectivity shapes learning and performance. This approach helps us uncover principles of neural organization and design more efficient AI models.
-
-This project is active and ongoing.
-
-## **Hallu-RL** ##
-*Graphical abstract coming soon*
-
-We are developing an AI system where LLMs teach each other in an automated teacher-student-examiner setup. By leveraging controlled hallucinations and reinforcement learning, our approach allows AI agents to refine their understanding of domain-specific knowledge—like financial reports—beyond their pre-training. This presents a new way to view AI-generated speculation, not as an error, but as a tool for deeper learning. We envision that such a framework will also allow us to explore modes by which AI agents can communicate and "copy" their information.
-
-This project is active and ongoing.
+# Past Projects in DNA Nanotechnology
 
 ## **DNAxiS**
 
@@ -44,6 +24,14 @@ You can find it kindly hosted by the Duke University Computer Science Department
 It can also be run on your local machine and the source is available on GitHub: [https://github.com/dfu99/dnaxis](https://github.com/dfu99/dnaxis)
 
 Our paper on this work was published in Science Advances: [DOI: 10.1126/sciadv.ade4455](https://doi.org/10.1126/sciadv.ade4455).
+
+Watch our reinforcement strategy in motion:
+
+| **Single-layer** | **Reinforced** |
+|-----------|------------------|
+| <img src="/images/research/1Lr.gif" alt="Single-layer DNA origami trajectory" width="300px" /> | <img src="/images/research/REr.gif" alt="Reinforced DNA origami trajectory" width="300px" /> |
+
+Trajectories produced by [oxDNA](https://dna.physics.ox.ac.uk/index.php?title=Main_Page).
 
 ## **Y-STAM**
 
