@@ -3,7 +3,7 @@ layout: post
 title: "aRLarm: A Workflow-First Revisit of a Classic ML Problem"
 ---
 
-![aRLarm demonstration](images/research/aRLarm_grid.gif)
+![aRLarm demonstration](/images/research/aRLarm_grid.gif)
 
 
 Every so often, I like to strip away the problem-design bottleneck and focus on **workflow**.
