@@ -9,6 +9,16 @@ permalink: /research/
 
 <i>Stay tuned for preprints!</i>
 
+## **aRLarm**
+
+<p align="center">
+    <img src="/images/research/aRLarm_grid.gif" alt="aRLarm grid experiment" width="450px" />
+</p>
+
+A small side project testing transformer policies + SAC for variable linkages (tested up to 6-DOF), bypassing explicit inverse kinematics. Trained multiple models at different step counts and linkage sizes on GPUs via a Slurm cluster.
+
+Source code is available on GitHub: [https://github.com/dfu99/aRLarm](https://github.com/dfu99/aRLarm)
+
 # Past Projects in DNA Nanotechnology
 
 ## **DNAxiS**
