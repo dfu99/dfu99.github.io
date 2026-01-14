@@ -8,33 +8,23 @@ title: "aRLarm: A Workflow-First Revisit of a Classic ML Problem"
 
 Every so often, I like to strip away the problem-design bottleneck and focus on **workflow**.
 
-If I'm stuck on conceptual problems, I'm not using tools.
+If I'm stuck on the conceptual part of a problem, I'm not actually working with the tools needed to get the job done.
 If I'm not using tools, I'm not learning them.
-And if I'm not learning them, I can't rapidly test solutions when I get to them.
+And if I'm not learning them, I get slowed down when I do get to implementation.
 
-In a world where new tooling moves faster than ever—where "old ways" can mean *months* old—it's risky to stay stuck in outdated workflows. This project was a chance to break that pattern.
+Not to mention, new tooling is moving on the scale of months, maybe even weeks now. Easy to spend time on an old workflow that might be getting lapped by a new one.
 
-## Why revisit the planar arm?
+## Visiting an old friend
 
-The planar actuator is a well-worn ML problem. For 2- and 3-DOF systems, a simple feedforward network can learn inverse kinematics (and there's even an analytical solution). But once you push to **4+ linkages**, that convenience collapses fast.
+Designing a neural network for a 2D planar actuator was actually one of the first machine learning projects I used when learning ML, so this one is a bit nostalgic. That one was a pretty simple FFNN to learn inverse kinematics. Except, once I tried to go higher than 4 DOF, I gave up.
 
-And this is where it gets interesting.
+So, jump forward to modern architectures. A bit of a statement for the scaling advocates too. Using a transformer model that can relate all the arm angles to the target at the same time, applying reinforcement learning, and throwing a bunch of compute at it, I got models working up to 6-DOF. The only catch is that at the far end (6-DOF, 4 million steps), the training started taking *days*.
 
-Throw enough compute at transformers + reinforcement learning and those analytical barriers start to dissolve. This project is an example of that feeling in real time.
+Could I keep scaling? Probably, it's just getting expensive and it's too much waiting for this step of the project.
 
-## What worked
+## Scheduling/Training Workflows
 
-I was able to get 2D robots working up to **6 linkages**.
-
-The catch? It took **days of training**.
-
-Could I keep scaling? Probably. But the cost becomes brutal quickly.
-
-## What this project was really about
-
-This wasn't just about the arm. It was about getting better at *shipping workflows*—faster iterations, more flexible pipelines, fewer mental roadblocks.
-
-I've got an idea for what I want to try next time. For now, I'm back to applying new workflows.
+Anyways, I've gotten what I wanted out of this, which is working out some HPC scheduling workflows for training that I like. I've got an idea for what I want to try next time for this arm, but that'll be for later. For now, workflow practice is over and it's time to get back to applying the workflows toward research problems again.
 
 ## Links
 
