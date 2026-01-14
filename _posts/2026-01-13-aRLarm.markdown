@@ -1,0 +1,42 @@
+---
+layout: post
+title: "aRLarm: A Workflow-First Revisit of a Classic ML Problem"
+---
+
+![aRLarm demonstration](images/research/aRLarm_grid.gif)
+
+
+Every so often, I like to strip away the problem-design bottleneck and focus on **workflow**.
+
+If I'm stuck on conceptual problems, I'm not using tools.
+If I'm not using tools, I'm not learning them.
+And if I'm not learning them, I can't rapidly test solutions when I get to them.
+
+In a world where new tooling moves faster than ever—where "old ways" can mean *months* old—it's risky to stay stuck in outdated workflows. This project was a chance to break that pattern.
+
+## Why revisit the planar arm?
+
+The planar actuator is a well-worn ML problem. For 2- and 3-DOF systems, a simple feedforward network can learn inverse kinematics (and there's even an analytical solution). But once you push to **4+ linkages**, that convenience collapses fast.
+
+And this is where it gets interesting.
+
+Throw enough compute at transformers + reinforcement learning and those analytical barriers start to dissolve. This project is an example of that feeling in real time.
+
+## What worked
+
+I was able to get 2D robots working up to **6 linkages**.
+
+The catch? It took **days of training**.
+
+Could I keep scaling? Probably. But the cost becomes brutal quickly.
+
+## What this project was really about
+
+This wasn't just about the arm. It was about getting better at *shipping workflows*—faster iterations, more flexible pipelines, fewer mental roadblocks.
+
+I've got an idea for what I want to try next time. For now, I'm back to applying new workflows.
+
+## Links
+
+- Tinkering here: https://github.com/dfu99/aRLarm
+- The old IK robot for comparison: https://github.com/dfu99/IK-FNN
