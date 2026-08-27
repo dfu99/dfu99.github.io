@@ -7,7 +7,7 @@ title: "Force-Biased MD on the αVβ3 Genu"
     <img src="/images/2026-08-26/avb3_extension.gif" alt="Bent to extended αVβ3 leg swing" width="420px" />
 </p>
 
-Notes on where the integrin conformer work stands. The target is the bent↔extended switch in αVβ3 — what holds the extended ectodomain open, and whether removing a specific contact changes how it behaves under load.
+Current state of the integrin conformer work. The target is the bent↔extended switch in αVβ3: what holds the extended ectodomain open, and whether removing a specific contact changes its behaviour under load.
 
 ## Building the extended endpoint
 
@@ -42,7 +42,7 @@ Two follow-ups characterize it without dynamics:
 
 Mutating a linchpin and watching the extended state decay at zero force does not test the lock. Integrins are force-sensitive: bent is the ground state at F = 0, and extension is thermodynamically uphill without tension. Roughly 20 pN over 15 nm tilts the landscape by ~43 kcal/mol, against ~6–8 kcal/mol screened per genu lock. In that regime wild type collapses alongside every mutant — knee 174° → 146°, mutant−WT differential ~9° against ±10–17° replicate scatter (Welch t = 1.1 and 0.85). That is an absent barrier, not an under-sampled one, and more replicates only measure the collapse more precisely.
 
-## Applying force, and verifying it arrives
+## Applying force, and verifying delivery
 
 Load is applied as a `CustomCentroidBondForce` between the ligand-binding headpiece (736 Cα) and the C-terminal 30 residues of each chain (60 Cα), where the TM helices would continue — a separation-independent force, equal and opposite, along a 153 Å axis.
 
@@ -51,7 +51,7 @@ Two checks run on every force run:
 - **Readback.** Requesting 20 pN puts −20.000 pN on the head anchor and +20.000 pN on the foot, net 2×10⁻¹³ pN; 40 pN gives −40.000/+40.000, on the real 22,483-atom build.
 - **Displacement.** 20 ps at 400 pN in vacuum takes the knee 174.4° → 176.9° and holds head↔foot at 152.5 Å, while the 0 pN control falls to 172.2° and contracts to 151.5 Å.
 
-The protocol is a **down**-ramp: equilibrate 2 ns at 60 pN, then release 60 → 0 pN over 8 ns, so the measurement is the force at which holding stops. An up-ramp from zero is not interpretable from this starting structure — the unloaded knee loses half its drop in 3.8 ± 2.4 ns on its own, and mapping that collapse clock onto a 0 → 60 pN schedule reports F½ = 12 ± 7 pN with no force applied at all. That number is the null any result has to beat.
+The protocol is a **down**-ramp: equilibrate 2 ns at 60 pN, then release 60 → 0 pN over 8 ns, so the measurement is the force at which holding stops. An up-ramp from zero is not interpretable from this starting structure — the unloaded knee loses half its drop in 3.8 ± 2.4 ns on its own, and mapping that collapse clock onto a 0 → 60 pN schedule reports F½ = 12 ± 7 pN with no force applied at all. That value is the null model any measured F½ must beat.
 
 ## Result under load
 
@@ -68,9 +68,9 @@ Load keeps the wild-type genu network clasped over a window in which, unloaded, 
 
 The knee-angle F½ values in the left panels do not beat their null model and are not quotable: within a single ramp, force and time are perfectly confounded, so anything that merely decays reproduces the signature. The null predicts F½ = 42.8 ± 15.1 pN (WT), 60.0 ± 0.0 (K459A), 59.8 ± 0.4 (E598A) — the same ordering as observed. The stiffness panel is empty by construction; under a ramp the variance in knee angle is ramp drift, not thermal fluctuation, so κ requires a constant-force ladder instead.
 
-The static ranking does not survive either. E598A collapsed further than K459A (final knee 110.3° vs 118.9°, three bridges opened vs two), inverting the lock-energy prediction for the second time — under load and without it.
+The static lock-energy ranking is not reproduced. E598A collapsed further than K459A (final knee 110.3° vs 118.9°, three bridges opened vs two), inverting the predicted ordering both under load and at zero force.
 
-## Two properties of the model that bound the reading
+## Model limitations
 
 **The pull couples to the knee as cos(θ/2), which vanishes at full extension.** From the coordinates: genu→head arm 67.7 Å, genu→foot 85.6 Å, head→foot 153.1 Å; cos(θ/2) = 0.049 at 174.4° against 0.296 at 145.6°. Delivering the knee torque at 174° that 17.8 pN delivers at 146° takes ~108 pN of axial force. Force-versus-knee is intrinsically weak at the extended end, which is a second reason the bridge distances are the better observable.
 
