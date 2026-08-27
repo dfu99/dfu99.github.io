@@ -17,7 +17,7 @@ permalink: /research/
 
 An agentic front-end for DNA nanostructure design. It orchestrates the fragmented DNA origami tool ecosystem — caDNAno, DAEDALUS, PERDIX, TALOS, DNAxiS, autobreak, tacoxDNA, oxDNA — behind one natural-language interface, and formalizes the design knowledge that lives in nobody's codebase into verifier functions, parametric scripts, and failure catalogs.
 
-Presented at [DNA32](https://isnsce.org/dna32-august-3-7-2026/) (Fayetteville, AR, August 2026) with Yonggang Ke: *Coding Agents as a Mechanism for Formalizing and Transferring Domain Knowledge in DNA Origami Design*. Write-up [here](/2026/08/26/cadnagentic-dna32.html).
+Presented at [DNA32](https://isnsce.org/dna32-august-3-7-2026/) (Fayetteville, AR, August 2026) with Yonggang Ke: *Coding Agents as a Mechanism for Formalizing and Transferring Domain Knowledge in DNA Origami Design*. Preprint on [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.04.11.717962v1); write-up [here](/2026/08/26/cadnagentic-dna32.html).
 
 Source: [https://github.com/dfu99/caDNAgentic](https://github.com/dfu99/caDNAgentic)
 

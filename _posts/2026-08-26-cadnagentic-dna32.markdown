@@ -56,5 +56,6 @@ Running that backlog through oxDNA turned up a design rule I didn't go looking f
 
 ## Links
 
+- Preprint: [https://www.biorxiv.org/content/10.64898/2026.04.11.717962v1](https://www.biorxiv.org/content/10.64898/2026.04.11.717962v1)
 - caDNAgentic: [https://github.com/dfu99/caDNAgentic](https://github.com/dfu99/caDNAgentic)
 - DNA32: [https://isnsce.org/dna32-august-3-7-2026/](https://isnsce.org/dna32-august-3-7-2026/)

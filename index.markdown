@@ -28,7 +28,7 @@ Feel free to browse or get in touch about ongoing or previous [research](/resear
 ## Selected Publications
 
 <ul style="line-height: 1.8;">
-  <li><b>Fu D</b>, Ke Y. <i>Coding Agents as a Mechanism for Formalizing and Transferring Domain Knowledge in DNA Origami Design.</i> <b>DNA32</b> (2026), Track B talk. <a href="/2026/08/26/cadnagentic-dna32.html">[write-up]</a></li>
+  <li><b>Fu D</b>, Ke Y. <i>Coding Agents as a Mechanism for Formalizing and Transferring Domain Knowledge in DNA Origami Design.</i> <b>DNA32</b> (2026), Track B talk. <a href="https://www.biorxiv.org/content/10.64898/2026.04.11.717962v1">[preprint]</a></li>
   <li><b>Fu D</b>, Reif J. <i>A Biomimetic Branching Signal-Passing Tile-Assembly Model with Dynamic Growth and Disassembly.</i> <b>Journal of Royal Society Interface</b> (2024). <a href="https://doi.org/10.1098/rsif.2023.0755">[publisher]</a></li>
   <li><b>Fu D</b>, Pradeep Narayanan R, Prasad A, Zhang F, Williams D, Schreck JS, Yan H, Reif J. <i>Automated design of 3D DNA origami with non-rasterized 2D curvature.</i> <b>Science Advances</b> (2022). <a href="https://doi.org/10.1126/sciadv.ade4455">[publisher]</a></li>
 </ul>
