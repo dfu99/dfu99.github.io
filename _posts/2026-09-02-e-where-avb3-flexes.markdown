@@ -9,7 +9,7 @@ Two independent sources describe αVβ3 flexibility in this project: the 615-fra
 
 Three per-residue quantities were computed. Root-mean-square fluctuation is taken from the fitted HS-AFM trajectories. Cross-conformer Cα standard deviation is taken from the 615 × 615 Kabsch-aligned library. Cα-Cα-Cα bond-angle standard deviation over the library measures backbone hinge activity, and unlike the first two it is invariant to rigid-body motion.
 
-Raw RMSF is dominated by whole-molecule rotation. Aligning each frame to the first on 790 headpiece Cα atoms (αV residues 1 to 440 and β3 residues 1 to 350) before computing RMSF drops the mean from 53.47 to 19.29 Å in V1 and from 71.24 to 19.30 Å in V2. Before correction the two recordings differed by 18 Å in mean RMSF; after correction they agree to three significant figures, because the difference was a trajectory-length bias in the rotational component.
+Raw RMSF is dominated by whole-molecule rotation. Aligning each frame to the first on 790 headpiece Cα atoms (αV residues 1 to 440 and β3 residues 1 to 350) before computing RMSF drops the mean from 53.47 to 19.29 Å in recording 1 and from 71.24 to 19.30 Å in recording 2. Before correction the two recordings differed by 18 Å in mean RMSF; after correction they agree to three significant figures, because the difference was a trajectory-length bias in the rotational component.
 
 After correction the headpiece sits at 7.4 to 9.7 Å RMSF, consistent with side-chain and loop motion around a rigid body. The αV calf reaches about 20 Å, the β3 tail about 26 Å, and the αV C-terminal coil 44 to 47 Å.
 
@@ -18,7 +18,7 @@ After correction the headpiece sits at 7.4 to 9.7 Å RMSF, consistent with side-
 
 The triple-agreement composite is the rectified product of the three z-scores, which requires a residue to score highly on all three rather than on one. Its highest values are B:689 at 10.47, B:652 at 10.14 and A:842 at 10.03. C-terminal coils dominate the ranking. Classical normal-mode analysis works from a static reference and does not emphasize this surface-coupled coil motion.
 
-Bootstrap resampling with 500 replicates over the fitted frames tests whether the ranking is stable. The per-residue RMSF profiles of V1 and V2 correlate at Pearson r = 0.998. The 19 most flexible residues hold their position in at least 97 % of resamples. The boundary between the 20th and 21st residue is not resolved, because the 20th residue's lower confidence bound of 87.12 Å falls below the 21st's upper bound of 90.84 Å, so the top-19 is the defensible ranking and residues 20 to 25 are a second tier. Every top residue lies in αV C-terminal calf-2 and membrane-proximal regions, at residues 761 to 764, 804 to 805, 909 to 915, and 956 to 962.
+Bootstrap resampling with 500 replicates over the fitted frames tests whether the ranking is stable. The per-residue RMSF profiles of recording 1 and recording 2 correlate at Pearson r = 0.998. The 19 most flexible residues hold their position in at least 97 % of resamples. The boundary between the 20th and 21st residue is not resolved, because the 20th residue's lower confidence bound of 87.12 Å falls below the 21st's upper bound of 90.84 Å, so the top-19 is the defensible ranking and residues 20 to 25 are a second tier. Every top residue lies in αV C-terminal calf-2 and membrane-proximal regions, at residues 761 to 764, 804 to 805, 909 to 915, and 956 to 962.
 
 ## Agreement with published normal-mode analysis
 

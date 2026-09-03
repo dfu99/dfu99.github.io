@@ -8,11 +8,11 @@ title: "One Genu-Hinge Morph Recipe Across Five Integrins"
 </p>
 *Incremental genu-hinge morph applied to five integrin heterodimers from their deposited bent or half-bent structures. Blue is the headpiece, aqua the upper leg, orange the lower legs.*
 
-The route-A work built an extended αVβ3 endpoint by swinging the lower legs about the genu hinge in small increments with a vacuum minimization after each step, because a one-shot rigid-body rotation leaves a knee clash no minimizer descends. That recipe was written for one heterodimer with hand-checked domain boundaries. This report covers its generalization to five integrins with boundaries transferred by structural alignment, the validation against the published αVβ3 endpoint and against a cryo-EM extended structure, and the two variants whose boundary transfer is not reliable.
+[Earlier work in this project](/2026/08/26/conformers-md.html) built an extended αVβ3 endpoint by swinging the lower legs about the genu hinge in small increments with a vacuum minimization after each step, because a one-shot rigid-body rotation leaves a knee clash no minimizer descends. That recipe was written for one heterodimer with hand-checked domain boundaries. This report covers its generalization to five integrins with boundaries transferred by structural alignment, the validation against the published αVβ3 endpoint and against a cryo-EM extended structure, and the two variants whose boundary transfer is not reliable.
 
 ## Method
 
-Domain boundaries for each target were obtained by aligning its chains against the αVβ3 reference and transferring the route-A genu, upper-leg and lower-leg definitions across the alignment. Each morph then applies the same incremental protocol: swing the lower legs about the genu axis in steps of roughly 9°, vacuum-minimize under ff14SB after each step, and stop when the genu angle passes 150°. All runs are CPU-only and take 35 to 45 minutes each.
+Domain boundaries for each target were obtained by aligning its chains against the αVβ3 reference and transferring the αVβ3 genu, upper-leg and lower-leg definitions across the alignment. Each morph then applies the same incremental protocol: swing the lower legs about the genu axis in steps of roughly 9°, vacuum-minimize under ff14SB after each step, and stop when the genu angle passes 150°. All runs are CPU-only and take 35 to 45 minutes each.
 
 Acceptance requires four conditions: the genu angle reaches at least 150°, it increases monotonically to within 5°, long-axis extent grows by at least 20 %, and the potential energy stays finite at every step.
 
@@ -37,7 +37,7 @@ The five starting structures span a wide range of initial compactness, and the m
 
 ## Validation
 
-The αVβ3 run is a positive control against the previously published route-A endpoint, which was built with hand-checked boundaries. The generalized pipeline gives a radius of gyration of 66.57 Å against 67.32 Å and a long-axis extent of 209.9 Å against 211.36 Å, deviations of 1.1 % and 0.7 %. Alignment-transferred boundaries reproduce the hand-checked result.
+The αVβ3 run is a positive control against the previously published αVβ3 endpoint, which was built with hand-checked boundaries. The generalized pipeline gives a radius of gyration of 66.57 Å against 67.32 Å and a long-axis extent of 209.9 Å against 211.36 Å, deviations of 1.1 % and 0.7 %. Alignment-transferred boundaries reproduce the hand-checked result.
 
 αVβ3 is also the only variant with a deposited extended experimental structure available for comparison. Against 8XEN, a cryo-EM structure of the αVβ3 complex in an extended conformation, the morph gives an extent of 209.9 Å against 214.5 Å, a difference of 4.6 Å, and a radius of gyration of 66.6 Å against 62.4 Å. The genu angles differ more: 176.2° for the morph against 145.3° for 8XEN. The morph produces a straighter leg than the experimental extended structure, which is expected because the protocol swings until the acceptance threshold is passed rather than to a target angle, and the vacuum model carries no solvent or ion term that would favor an intermediate angle.
 

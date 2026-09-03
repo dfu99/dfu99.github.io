@@ -3,12 +3,12 @@ layout: post
 title: "Free Energy and Kinetics of Surface-Bound αVβ3 from HS-AFM"
 ---
 
-The template-matching fits give 1645 unbiased frames of αVβ3 conformation at 1 frame per second, 379 from recording V1 and 1266 from V2. Because the recordings are unbiased observations rather than a driven simulation, the frame distribution is an experimental sample of the equilibrium population and supports a free-energy profile, state populations, transition rates and dwell times. This report covers those quantities, the tests that validate them, and the region of conformational space where they are undefined.
+The template-matching fits give 1645 unbiased frames of αVβ3 conformation at 1 frame per second, 379 from recording 1 and 1266 from recording 2. Because the recordings are unbiased observations rather than a driven simulation, the frame distribution is an experimental sample of the equilibrium population and supports a free-energy profile, state populations, transition rates and dwell times. This report covers those quantities, the tests that validate them, and the region of conformational space where they are undefined.
 
 Throughout, CV0 is the αV head-thigh to αV calf centroid distance. States are banded as bent-closed at CV0 ≤ 65 Å, intermediate at 65 to 78 Å, extended-closed at 78 to 85 Å, and extended-open above 85 Å.
 
 ![Four-panel dynamics synthesis](/images/2026-09-02/dynamics_synthesis_v1.png)
-*(A) ΔG(CV0) with 95 % bootstrap confidence band, state bands, and the Bayesian extended-open floor. (B) State populations under three independent definitions. (C) V2 hidden Markov model Viterbi state path with independently detected change-points and the transition matrix inset. (D) Per-state survival curves with exponential fits.*
+*(A) ΔG(CV0) with 95 % bootstrap confidence band, state bands, and the Bayesian extended-open floor. (B) State populations under three independent definitions. (C) Hidden Markov model Viterbi state path for recording 2, with independently detected change-points and the transition matrix inset. (D) Per-state survival curves with exponential fits.*
 
 ## Free energy profile
 
@@ -53,22 +53,22 @@ Both BIC and AIC prefer a four-state model by a wide margin (ΔBIC = −411, ΔA
 
 The population estimates above are time averages, and the underlying trajectory is not stationary.
 
-Splitting each recording into 50-frame blocks and testing block state fractions against a stationary Bernoulli null gives 7 of 28 block-state pairs in V1 and 27 of 100 in V2 beyond the Bonferroni-corrected threshold of |z| = 3.55, with maxima of 6.70 and 7.50. Recomputing ΔG(CV0) per block shows the free-energy minimum wandering with a standard deviation of about 8 Å in both recordings, wider than the intermediate band itself, with block minima spanning 55.5 to 79.2 Å in V1 and 54.3 to 84.0 Å in V2. Per-block ΔG standard deviation over the library-supported range is 1.9 to 2.9 kcal/mol with a maximum of 4.4.
+Splitting each recording into 50-frame blocks and testing block state fractions against a stationary Bernoulli null gives 7 of 28 block-state pairs in recording 1 and 27 of 100 in recording 2 beyond the Bonferroni-corrected threshold of |z| = 3.55, with maxima of 6.70 and 7.50. Recomputing ΔG(CV0) per block shows the free-energy minimum wandering with a standard deviation of about 8 Å in both recordings, wider than the intermediate band itself, with block minima spanning 55.5 to 79.2 Å in recording 1 and 54.3 to 84.0 Å in recording 2. Per-block ΔG standard deviation over the library-supported range is 1.9 to 2.9 kcal/mol with a maximum of 4.4.
 
 ![Change-point detection on FES minima and CV0 trajectories](/images/2026-09-02/change_point_detection.png)
-*Per-block free-energy minimum position with detected change-points (top row) and its CUSUM statistic (second row), and per-frame CV0 with change-points (third row) and its CUSUM statistic (bottom row), for V1 (left) and V2 (right).*
+*Per-block free-energy minimum position with detected change-points (top row) and its CUSUM statistic (second row), and per-frame CV0 with change-points (third row) and its CUSUM statistic (bottom row), for recording 1 (left) and recording 2 (right).*
 
-The structure is stepwise rather than a gradual drift. Per-frame CUSUM rejects stationarity at p < 1e-3 in both recordings. Binary segmentation with a BIC penalty finds three change-points in V1 (frames 166, 228, 259) and four in V2 (117, 200, 1049, 1205), with segment means of 74.2, 69.1, 77.7 and 64.3 Å in V1 and 80.8, 62.9, 71.1, 65.4 and 76.4 Å in V2. V2 contains an 848-frame intermediate plateau between frames 200 and 1048, bracketed by sharp transitions. Six of the seven change-points co-locate with hidden-Markov Viterbi state transitions to within ten frames, so two independent methods recover the same transition structure.
+The structure is stepwise rather than a gradual drift. Per-frame CUSUM rejects stationarity at p < 1e-3 in both recordings. Binary segmentation with a BIC penalty finds three change-points in recording 1 (frames 166, 228, 259) and four in recording 2 (117, 200, 1049, 1205), with segment means of 74.2, 69.1, 77.7 and 64.3 Å in recording 1 and 80.8, 62.9, 71.1, 65.4 and 76.4 Å in recording 2. The latter contains an 848-frame intermediate plateau between frames 200 and 1048, bracketed by sharp transitions. Six of the seven change-points co-locate with hidden-Markov Viterbi state transitions to within ten frames, so two independent methods recover the same transition structure.
 
-The drift has a state-population explanation rather than an instrumental one. Across the 25 V2 blocks, the bent fraction correlates with the block free-energy minimum at r = −0.773 and the extended-closed fraction at r = +0.756, both significant after Bonferroni correction, accounting for 57 to 60 % of the drift variance per state. A separate check found no metadata covariate that explains it.
+The drift has a state-population explanation rather than an instrumental one. Across the 25 blocks of recording 2, the bent fraction correlates with the block free-energy minimum at r = −0.773 and the extended-closed fraction at r = +0.756, both significant after Bonferroni correction, accounting for 57 to 60 % of the drift variance per state. A separate check found no metadata covariate that explains it.
 
-Rates, in contrast, are stationary. Comparing V1 and V2 dwell-time distributions per state gives Kolmogorov-Smirnov permutation p > 0.25 in all four tests, and all four mean-ratio 95 % confidence intervals span 1. The two recordings sample the same kinetic process with fixed mean dwell times, and their finite-window occupancies differ, which is the expected behavior of a stationary Markov chain at these sample sizes. The two recordings can therefore be pooled for rate estimation, and should not be pooled for occupancy without reporting the block structure.
+Rates, in contrast, are stationary. Comparing recording 1 and recording 2 dwell-time distributions per state gives Kolmogorov-Smirnov permutation p > 0.25 in all four tests, and all four mean-ratio 95 % confidence intervals span 1. The two recordings sample the same kinetic process with fixed mean dwell times, and their finite-window occupancies differ, which is the expected behavior of a stationary Markov chain at these sample sizes. The two recordings can therefore be pooled for rate estimation, and should not be pooled for occupancy without reporting the block structure.
 
 ## The data do not support an extended-open state
 
 CV2, the αV head to β3 head separation, distinguishes extended-closed from extended-open at a 50 Å threshold. A two-dimensional hidden Markov model was fitted over (CV0, CV2) with a four-state variant deliberately seeded at CV0 = 85 Å and CV2 = 55 Å, inside the extended-open region, to test whether expectation maximization would keep a state there if the data supported one.
 
-The seeded state converged downward to CV2 = 41.6 Å with a stationary weight of 0.10. The maximum CV2 anywhere in the 1645 fitted frames is 48.3 Å, below the threshold. A three-dimensional fit over (CV0, CV1, CV2) recovers the same partition and confirms CV1 as redundant.
+The seeded state converged downward to CV2 = 41.6 Å with a stationary weight of 0.10. The maximum CV2 anywhere in the 1645 fitted frames is 48.3 Å, below the threshold. A three-dimensional fit that adds the β3 head-to-tail distance recovers the same partition and shows that third coordinate to be redundant.
 
 This is a statement about the fit set, and the fit set inherits the library. Because the conformer library contains no headpiece-open templates, the absence of an extended-open state in these recordings cannot be distinguished from an inability to represent one.
 

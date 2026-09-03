@@ -3,7 +3,7 @@ layout: post
 title: "Building an αVβ3 Conformer Library by Steered MD"
 ---
 
-The AFMFold framework needs an ensemble of αVβ3 ectodomain structures spanning the bent and extended states, because every downstream step (forward-rendering simulated AFM, template-matching real AFM) consumes a conformer library as its input contract. There is no extended αVβ3 crystal structure, so the ensemble has to be generated. This report covers how it was generated, what the resulting library covers, and the one region of conformational space it does not reach.
+This project reconstructs the shape changes of single αVβ3 integrin molecules from high-speed AFM recordings, by matching each video frame against a library of candidate structures. Both halves of that method, rendering simulated AFM images from structures and matching real images back to them, need the same input: an ensemble of αVβ3 ectodomain structures spanning the bent and extended states. There is no extended αVβ3 crystal structure, so the ensemble has to be generated. This report covers how it was generated, what the resulting library covers, and the one region of conformational space it does not reach.
 
 ## Structure prediction returns only the bent state
 
@@ -46,13 +46,13 @@ The library is the union of two steering runs in opposite directions from a comm
 The extend run contributes 309 frames spanning CV0 (αV head-thigh to αV calf centroid distance) from 52.9 to 85.0 Å. The bent run, added later with targets [4.0, 3.5, 2.0] nm and k = 200, contributes 306 frames and reaches CV0 = 47.3 Å, below the 51.4 Å of the bent crystal 1JV2. The combined library is 615 frames.
 
 ![Steered MD CV trajectories and combined library manifold](/images/2026-09-02/steering_cv_trajectory.png)
-*Extend-steering CV0 trajectory (top left), bent-steering CV0 trajectory (top right), β-leg extension for both runs (bottom left), and the combined 615-frame library on the CV0-CV1 plane with the 1JV2 reference marked (bottom right).*
+*Extend-steering CV0 trajectory (top left), bent-steering CV0 trajectory (top right), β-leg extension for both runs (bottom left), and the combined 615-frame library plotted as α-leg against β-leg extension, with the 1JV2 reference marked (bottom right).*
 
 The bent run overshoots the crystal rather than falling short of it, so the library brackets 1JV2 on the compact side. On the extended side it stops at 85.0 Å.
 
 ## The headpiece does not open under classical SMD
 
-Extension and headpiece opening are separate transitions. CV2, the αV head to β3 head separation, distinguishes the extended-closed (EC) state from the extended-open (EO) state at a threshold of 50 Å. Three attempts were made to drive it.
+Extension and headpiece opening are separate transitions. CV2, the αV head to β3 head separation, distinguishes the extended-closed state from the extended-open state at a threshold of 50 Å. Three attempts were made to drive it.
 
 The first used a preset named `cv_distance_headopen` that silently inherited the default head-tail pair list, which contains no head-head pair. CV2 stayed at 34 ± 0.4 Å over 790 ps, so the preset was not applying the bias its name described. After adding an explicit (αV head-thigh, β3 head) pair, two further runs were made. At k = 250 with a 6 nm target, CV2 moved 34.6 to 34.9 Å over 620 ps. At k = 1000 with a 0.5 nm flat bottom and the leg targets set to their current values so they do not compete, CV2 moved 35.7 to 36.6 Å over 620 ps.
 
@@ -63,18 +63,18 @@ The observed rate is 0.07 Å/ps, which extrapolates to roughly 320 ns to reach a
 
 ## Published structures supply no extended-open endpoint
 
-An alternative to sampling EO is to import it. All five published full-ectodomain αVβ3 crystal structures (1JV2, 1L5G, 4G1E, 4G1M, 4MMX) were scored on the same CVs.
+An alternative to sampling the extended-open state is to import it. All five published full-ectodomain αVβ3 crystal structures (1JV2, 1L5G, 4G1E, 4G1M, 4MMX) were scored on the same three distances.
 
 ![Library coverage against five published αVβ3 ectodomain structures](/images/2026-09-02/library_coverage_v3.png)
-*Library and fitted-trajectory CV distributions with the five published αVβ3 ectodomain crystal structures marked in red, on CV0 (top), CV1 (middle) and CV2 (bottom). The hatched region on CV2 is the EO band.*
+*Library and fitted-trajectory distributions with the five published αVβ3 ectodomain crystal structures marked in red, for the αV head-to-calf distance (top), the β3 head-to-tail distance (middle) and the head-to-head separation (bottom). The hatched region in the bottom panel is the extended-open band.*
 
-All five sit at CV0 = 51 to 52 Å and CV2 = 36 to 37 Å. None reaches the EO threshold. Cilengitide-bound 1L5G, which has an open headpiece internally, still crystallizes bent overall. Importing EO endpoints from the PDB returns zero usable structures.
+All five sit at CV0 = 51 to 52 Å and CV2 = 36 to 37 Å. None reaches the extended-open threshold. Cilengitide-bound 1L5G, which has an open headpiece internally, still crystallizes bent overall. Importing extended-open endpoints from the PDB returns zero usable structures.
 
 ## What remains
 
-The library covers the bent-to-extended-closed axis and does not cover extended-open. Two consequences follow for everything built on it. Any state assignment made from this library can label BC, Intermediate and EC but cannot label EO. Any free-energy or population estimate is undefined above CV0 = 85 Å.
+The library covers the bent-to-extended-closed axis and does not cover extended-open. Two consequences follow for everything built on it. Any state assignment made from this library can label bent-closed, intermediate and extended-closed, but cannot label extended-open. Any free-energy or population estimate is undefined above CV0 = 85 Å.
 
-Closing the gap requires enhanced sampling rather than a longer classical run: metadynamics, replica exchange, a string method seeded from αIIbβ3 structures, or a coarse-grained Gō-Martini model. The route-A string-method work reported separately is the current line of attack.
+Closing the gap requires enhanced sampling rather than a longer classical run: metadynamics, replica exchange, a string method seeded from αIIbβ3 structures, or a coarse-grained Gō-Martini model. A string-method calculation along the bent-to-extended path, described in an [earlier post](/2026/08/26/conformers-md.html), is the current line of attack.
 
 ## Links
 

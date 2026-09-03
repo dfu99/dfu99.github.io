@@ -6,14 +6,14 @@ title: "A Forward Model for Simulated High-Speed AFM"
 <p align="center">
   <img src="/images/2026-09-02/sim_afm_video2.gif" alt="Simulated HS-AFM video of αVβ3" width="260px" />
 </p>
-*Simulated HS-AFM video generated from the 615-frame αVβ3 conformer library, subsampled from the v11 render. The z-blur and blur-isotropy corrections described below were applied after this version.*
+*Simulated HS-AFM video generated from the 615-frame αVβ3 conformer library, subsampled from an earlier version of the renderer. The z-axis blur and blur-isotropy corrections described below were made after this version.*
 
 
-The forward arm of AFMFold converts a conformer library into a simulated HS-AFM video. It exists to test the imaging model independently of the fitting problem: if the same library and the same tip parameters that fit a real recording also reproduce its visual character, the imaging model is not the limiting error. This report covers the render pipeline, the parameters that were calibrated against real data, and the measured agreement between simulated and real frames.
+This project reconstructs the shape changes of single αVβ3 integrin molecules from high-speed AFM recordings, by matching each video frame against a library of candidate structures. The forward half of that method converts the library into a simulated HS-AFM video. It exists to test the imaging model independently of the fitting problem: if the same library and the same tip parameters that fit a real recording also reproduce its visual character, the imaging model is not the limiting error. This report covers the render pipeline, the parameters that were calibrated against real data, and the measured agreement between simulated and real frames.
 
 ## Pipeline
 
-The renderer takes a folder of PDBs plus a `library.json` giving per-frame CVs and trajectory order, the same input contract the template-matching arm consumes, and runs four stages.
+The renderer takes a folder of structures plus a metadata file giving per-frame shape coordinates and trajectory order, the same input the template-matching step consumes, and runs four stages.
 
 1. Ingest the conformer library in trajectory order.
 2. Stabilize orientation.
@@ -24,7 +24,7 @@ The renderer takes a folder of PDBs plus a `library.json` giving per-frame CVs a
 
 A surface-bound molecule imaged by HS-AFM lies on a consistent face and reorients in discrete steps. A per-frame render taken straight from fitted coordinates does neither: it rolls between faces and spins smoothly.
 
-The stabilization stage applies a five-step lock. PCA-flatten places the smallest principal axis vertical, so the molecule lies flat. A side-lock keeps the chain A face down. Long-axis sign alignment between consecutive frames removes PCA eigenvector sign flips. Stepwise yaw with a 50° threshold, a 20-frame minimum dwell and a 30° per-step cap replaces smooth rotation with discrete reorientation. Head xy positions are Gaussian smoothed at σ = 8 frames. Over the 1266 frames of video 2 this commits three discrete 30° yaw steps.
+The stabilization stage applies a five-step lock. PCA-flatten places the smallest principal axis vertical, so the molecule lies flat. A side-lock keeps the chain A face down. Long-axis sign alignment between consecutive frames removes PCA eigenvector sign flips. Stepwise yaw with a 50° threshold, a 20-frame minimum dwell and a 30° per-step cap replaces smooth rotation with discrete reorientation. Head xy positions are Gaussian smoothed at σ = 8 frames. Over the 1266 frames of the longer recording this commits three discrete 30° yaw steps.
 
 ## Canvas and z-axis calibration
 
@@ -43,12 +43,12 @@ A fourth correction removed a horizontal artifact. The post-dilation blur had be
 
 ## Measured agreement with real frames
 
-The fitted PDBs from the template-matching arm were forward-rendered at tip radius 1.5 nm, tip angle 20°, noise 0.1 nm and resolution 0.98 nm/px, then scored frame by frame against the real Linz recordings by cosine similarity.
+The structures fitted to the real recordings, described in a companion post, were forward-rendered at tip radius 1.5 nm, tip angle 20°, noise 0.1 nm and resolution 0.98 nm/px, then scored frame by frame against the real Linz recordings by cosine similarity.
 
-| | sim vs real | random baseline |
+| | simulated vs real | random baseline |
 |---|---|---|
-| video 1 | 0.824 | 0.65 |
-| video 2 | 0.722 | 0.43 |
+| recording 1 | 0.824 | 0.65 |
+| recording 2 | 0.722 | 0.43 |
 
 The library and the imaging model jointly reproduce the real data above the random baseline in both recordings, with a larger margin in video 2.
 
@@ -71,7 +71,7 @@ Hard-sphere dilation ignores indentation. Hertzian contact was computed across t
 
 Indentation reaches 5 to 14 % of the 2 nm probe-sphere height, and every value sits below the roughly 1 nm vertical noise floor of HS-AFM. Hard-sphere dilation is therefore a defensible first-order imaging model in this regime, and the Hertzian correction is a quantifiable systematic rather than a confounder.
 
-## Consistency between the forward and inverse arms
+## Consistency between the two halves of the method
 
 The forward renderer and the overlay renderer consume different post-processing variants of the same fitted coordinates. The renderer reads `fitted_coords_stable.npy`, produced by the orientation-stabilization stage, while the overlay renderer defaulted to `fitted_coords_smooth.npy`, which has had temporal smoothing but no PCA-flatten or side-lock. At frame 100 the head-to-tail xy axis differs by 66° between the two variants, which appeared as a rotational misalignment in the combined figure. Both paths now project the same coordinate variant.
 
