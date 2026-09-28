@@ -41,10 +41,16 @@ whether a repo is public) before publishing them.
 Applies to Slack checkpoint reports too.
 
 **Nothing reaches `_posts/` unread.** Eight posts written to these rules were
-still pulled on 2026-09-27 for prose quality — the rules above catch structure,
-not voice, and that gap is not closable from this side. Draft into `_drafts/`
-(Jekyll does not publish it) or the scratchpad, say it is ready, and let Dan
-read the prose before it becomes a post and a push.
+still pulled on 2026-09-27 for prose quality. Write into `_drafts/` instead —
+Jekyll does not build it without `--drafts`, so committing there publishes
+nothing. Moving a file from `_drafts/` to `_posts/` is Dan's call, not an
+agent's.
+
+A draft's job is to report the findings, with the numbers, the figures and
+enough context to be readable cold. It is raw material: Dan rewrites it in his
+own language before it goes out. Do not spend effort polishing prose that gets
+replaced — spend it on getting the results and their caveats complete and
+correct.
 
 ## Assets
 
