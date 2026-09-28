@@ -40,6 +40,12 @@ whether a repo is public) before publishing them.
 
 Applies to Slack checkpoint reports too.
 
+**Nothing reaches `_posts/` unread.** Eight posts written to these rules were
+still pulled on 2026-09-27 for prose quality — the rules above catch structure,
+not voice, and that gap is not closable from this side. Draft into `_drafts/`
+(Jekyll does not publish it) or the scratchpad, say it is ready, and let Dan
+read the prose before it becomes a post and a push.
+
 ## Assets
 
 Images go in `images/YYYY-MM-DD/` for posts, `images/research/` for the
