@@ -6,6 +6,15 @@ Jekyll + minima, published by GitHub Pages from `main`. Posts live in
 
 ## Writing rules for posts and project write-ups
 
+Two kinds of post. **Results posts** (a project's findings) follow the rules
+below. **Narrative posts** (a talk, how a project came about, first-person
+account) use the `blog-post` skill and the Blog posts overlay in
+`~/code/development/global/writing-style.md` instead: narrative and "I" are
+allowed there, the "report results, not process" and "no meta-commentary"
+rules below do not apply, and every number is still verified. Both kinds ship
+a semantic outline (`<post>.outline.md`) next to the draft for Dan to rewrite
+from.
+
 These are hard constraints, not style preferences. They were given as a
 correction; violating them means the post gets rewritten.
 
